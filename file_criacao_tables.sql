@@ -21,8 +21,8 @@ CREATE TABLE [Combustivel](
 
 CREATE TABLE [Veiculos_combustiveis](
 [id_vc] INT IDENTITY(1,1) PRIMARY KEY,
-[id_veiculo] INT FOREIGN KEY REFERENCES Veiculos (id_veiculo) NOT NULL,
-[id_combustivel] INT FOREIGN KEY REFERENCES Combustiveis (id_combustivel) NOT NULL
+[placa] VARCHAR(25) FOREIGN KEY REFERENCES Veiculos (placa) NOT NULL,
+[id_combustivel] INT FOREIGN KEY REFERENCES Combustivel (id) NOT NULL
 );
 
 CREATE TABLE [Veiculos](
