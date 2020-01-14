@@ -1,5 +1,4 @@
 CREATE TABLE [Cor](
-	[id] [int] IDENTITY(1,1) NOT NULL,
-	[nome_cor] [varchar](100) NOT NULL,
+	[id_cor] INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	[cor] [varchar](100) NOT NULL,
 );
-

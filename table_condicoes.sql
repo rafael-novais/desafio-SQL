@@ -1,6 +1,5 @@
 CREATE TABLE [Condicoes](
-	[id] [int] IDENTITY(1,1) NOT NULL,
-	[nome_condicao] [varchar](100) NOT NULL,
-    [placa] [nvarchar](255) FOREIGN KEY REFERENCES Veiculos(placa),
+	[id_condicao] INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	[condicao] [varchar](100) NOT NULL
 );
 
